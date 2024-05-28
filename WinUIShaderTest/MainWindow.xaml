@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="WinUIShaderTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUIShaderTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:hx="using:HelixToolkit.WinUI"
+    mc:Ignorable="d">
+
+    <Grid>
+        <hx:Viewport3DX
+            x:Name="Viewport"
+            BackgroundColor="Black"
+            Camera="{x:Bind Camera}"
+            EffectsManager="{x:Bind EffectsManager}">
+
+            <hx:MeshGeometryModel3D
+                x:Name="Mesh1"
+                Geometry="{x:Bind Geometry1}"
+                Material="{x:Bind Material}" />
+
+            <local:CustomMeshModel3D
+                x:Name="Mesh2"
+                Geometry="{x:Bind Geometry2}"
+                Material="{x:Bind Material}" />
+
+        </hx:Viewport3DX>
+    </Grid>
+</Window>

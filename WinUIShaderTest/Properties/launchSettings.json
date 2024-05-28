@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUIShaderTest (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUIShaderTest (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
