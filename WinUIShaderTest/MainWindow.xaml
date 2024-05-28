@@ -16,6 +16,8 @@
             Camera="{x:Bind Camera}"
             EffectsManager="{x:Bind EffectsManager}">
 
+            <hx:DirectionalLight3D Direction="{Binding Camera.LookDirection}" Color="White" />
+
             <hx:MeshGeometryModel3D
                 x:Name="Mesh1"
                 Geometry="{x:Bind Geometry1}"

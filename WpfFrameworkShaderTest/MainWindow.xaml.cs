@@ -46,7 +46,6 @@ namespace WpfFrameworkShaderTest
 			Material = new DiffuseMaterial
 			{
 				DiffuseColor = Color4.White,
-				EnableUnLit = true,
 			};
 		}
 	}

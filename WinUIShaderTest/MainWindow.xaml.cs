@@ -50,7 +50,6 @@ namespace WinUIShaderTest
 			Material = new DiffuseMaterial
 			{
 				DiffuseColor = Color.White,
-				EnableUnLit = true,
 			};
 		}
 	}
